@@ -1,13 +1,11 @@
+import java.util.Scanner; 
 class Main {
   public static void main(String[] args) {
-    
-    int x = 5;
-    System.out.println(x);
-    float y = 2;
-    System.out.println(y);
-    double z = 3;
-    System.out.println(z);
-    String f = "napis";
-    System.out.println(f);
+    Scanner Obj = new Scanner(System.in); 
+
+  System.out.println("Podaj liczbę:");
+  int y = Obj.nextInt();
+  float wynik = y%10; 
+  System.out.println("Reszta z dzielenia przez 10: "+wynik);
   }
 }
